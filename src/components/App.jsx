@@ -30,37 +30,3 @@ export default function App() {
     </>
   );
 }
-
-// const [contacts, setContacts] = useLocalStorage('contacts', defaultContacts);
-// const [filter, setFilter] = useState('');
-
-// const addContacts = ({ name, number }) => {
-//   const contact = {
-//     id: nanoid(),
-//     name,
-//     number,
-//   };
-
-//   if (
-//     contacts.find(
-//       contact => contact.name.toLowerCase() === name.toLowerCase()
-//     )
-//   )
-//     alert(`${name} is already in contact`);
-//   else {
-//     return setContacts(prevState => [...prevState.contacts, contact]);
-//   }
-// };
-
-// const deleteContact = contactId => {
-//   setContacts(prevState =>
-//     prevState.filter(contact => contact.id !== contactId)
-//   );
-// };
-
-// const changeFilter = e => {
-//   setFilter(e.currentTarget.value);
-// };
-// const getVisibleContact = contacts.filter(contact =>
-//   contact.name.toLowerCase().includes(filter.toLowerCase())
-// );

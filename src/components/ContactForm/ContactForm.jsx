@@ -25,7 +25,8 @@ const ContactForm = () => {
   };
   const handleSubmit = e => {
     e.preventDefault();
-
+    setName('');
+    setNumber('');
     if (
       contacts.find(
         contact => contact.name.toLowerCase() === name.toLowerCase()
@@ -35,12 +36,6 @@ const ContactForm = () => {
     else {
       return dispatch(addContact({ name, number }));
     }
-
-    reset();
-  };
-  const reset = () => {
-    setName('');
-    setNumber('');
   };
 
   return (
